@@ -1,3 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  color: red;
+  color: #333;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: auto;
+}
+
+ul {
+  margin: 0;
+  padding:0;
+  display: flex;
+  list-style: none;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+li {
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #333;
+  padding: 40px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  background: 0;
+  width: 100%;
+  cursor: pointer;
+}
+.card.matched {
+  background: rgb(151, 247, 151);
+  color: 003f00;
+}
+
+.card.active {
+  background: #000;
+  color: #fff;
+}
+
+@media (min-width: 780px) {
+  ul {
+    flex-flow: row wrap;
+  }
+
+  li { 
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  li {
+    width: 33.333%;
+  }
 }

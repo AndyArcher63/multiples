@@ -1,6 +1,12 @@
-// source goes here
-const app = function() {
-  console.log('hello from app!');
+import dom from './dom';
+import {
+  cardContainer,
+  minCardNumber,
+  maxCardNumber,
+} from './config';
+
+const app = () => {
+  dom.init(cardContainer, minCardNumber, maxCardNumber);
 };
 
 export default app;

@@ -67,3 +67,9 @@ __Criteria for assessment__: Important things that will be assessed are:
 
 The test won’t be assessed on design at all, so don’t worry how it looks.
 
+
+## Developer Comments
+
+- Applied TDD for `helper.js`.
+
+- Added Jquery (dont hate me) as there was some DOM manipulation required and it's just simpler + in the world we live now the package size isnt a worry. However i have abstracted this side of things away from the rest of the code so it would be trivial to change this to use a framework after and still retain the use of my helper methods. I felt a framework was overkill for this project and as the webpack setup was already done it didnt make sense to add it.
